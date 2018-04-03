@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Result</h1>
+<table border="1">
+	<tr>
+		<th>name</th>
+		<th>score</th>
+		<th>region</th>
+		<th>price($)</th>
+	</tr>
+	{% for wine in data %}
+	<tr>
+		<td>{{wine.name}}</td>
+		<td>{{wine.rating}}</td>
+		<td>{{wine.region}}</td>
+		<td>{{wine.price}}</td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
